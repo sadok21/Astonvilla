@@ -29,7 +29,7 @@ services:
   ngrok:
     image: ngrok/ngrok:latest
     environment:
-      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+      - NGROK_AUTHTOKEN=${vars.NGROK_AUTHTOKEN}
     command:
       - "start"
       - "--all"
